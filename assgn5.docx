@@ -1,0 +1,353 @@
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git checkout hotfix1
+Switched to branch 'hotfix1'
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git checkout master
+Switched to branch 'master'
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git branch hotflix1
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git branch hotfix1
+fatal: A branch named 'hotfix1' already exists.
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git checkout hotfix1
+Switched to branch 'hotfix1'
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git add newfix1.hrml
+fatal: pathspec 'newfix1.hrml' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git add newfix1.html
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git commit -m "new fix 1 added"
+On branch hotfix1
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git add newfix2.html
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git commit -m "new fix 2 added"
+On branch hotfix1
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git revert head
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git checkout master
+Switched to branch 'master'
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git merge hotfix1
+Removing log.txt
+Merge made by the 'recursive' strategy.
+ log.txt      | 1 -
+ newfix1.html | 0
+ newfix2.html | 0
+ 3 files changed, 1 deletion(-)
+ delete mode 100644 log.txt
+ create mode 100644 newfix1.html
+ create mode 100644 newfix2.html
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log.txt
+fatal: failed to stat 'C:/Users/NAJJ KHAN/Desktop/myrepo': No such file or directory
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo
+$ touch .gitignore
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log.txt/.gitignore
+fatal: pathspec 'log.txt/.gitignore' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ checkout .gitignore
+bash: checkout: command not found
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git checkout .gitignore
+error: pathspec '.gitignore' did not match any file(s) known to git
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git checkout .gitignore
+error: pathspec '.gitignore' did not match any file(s) known to git
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log.txt/.gitignore
+fatal: pathspec 'log.txt/.gitignore' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log.txt/.gitignore
+fatal: pathspec 'log.txt/.gitignore' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log/.gitignore
+fatal: pathspec 'log/.gitignore' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log.txt
+fatal: pathspec 'log.txt' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log.txt/gitignore
+fatal: pathspec 'log.txt/gitignore' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add .gitignore/log.txt
+warning: unable to access '.gitignore': Permission denied
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git checkout master
+Already on 'master'
+A       .gitignore/log.txt
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add log.txt
+fatal: pathspec 'log.txt' did not match any files
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git add .gitignore/log.txt
+warning: unable to access '.gitignore': Permission denied
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git commit -m "message"
+[master 2a8ae1d] message
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore/log.txt
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git status
+warning: unable to access '.gitignore': Permission denied
+On branch master
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git chechout myrepo
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git checkout myrepo
+error: pathspec 'myrepo' did not match any file(s) known to git
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ cd myrepo
+bash: cd: myrepo: No such file or directory
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ cd Desktop/myrepo
+bash: cd: Desktop/myrepo: No such file or directory
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git status
+warning: unable to access '.gitignore': Permission denied
+On branch master
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add Signed-off-by:
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git status
+warning: unable to access '.gitignore': Permission denied
+On branch master
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ cd /Desktop/myrepo/
+bash: cd: /Desktop/myrepo/: No such file or directory
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ cd C:\Users\NAJJ KHAN\Desktop\myrepo
+bash: cd: too many arguments
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git status
+warning: unable to access '.gitignore': Permission denied
+On branch master
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git checkout hotfix1
+Switched to branch 'hotfix1'
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (hotfix1)
+$ git checkout master
+Switched to branch 'master'
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git status
+warning: unable to access '.gitignore': Permission denied
+On branch master
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ cd .git
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo/.git (GIT_DIR!)
+$ cd..
+bash: cd..: command not found
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo/.git (GIT_DIR!)
+$ cd -help
+bash: cd: -h: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo/.git (GIT_DIR!)
+$ cd --help
+cd: cd [-L|[-P [-e]] [-@]] [dir]
+    Change the shell working directory.
+
+    Change the current directory to DIR.  The default DIR is the value of the
+    HOME shell variable.
+
+    The variable CDPATH defines the search path for the directory containing
+    DIR.  Alternative directory names in CDPATH are separated by a colon (:).
+    A null directory name is the same as the current directory.  If DIR begins
+    with a slash (/), then CDPATH is not used.
+
+    If the directory is not found, and the shell option `cdable_vars' is set,
+    the word is assumed to be  a variable name.  If that variable has a value,
+    its value is used for DIR.
+
+    Options:
+      -L        force symbolic links to be followed: resolve symbolic
+                links in DIR after processing instances of `..'
+      -P        use the physical directory structure without following
+                symbolic links: resolve symbolic links in DIR before
+                processing instances of `..'
+      -e        if the -P option is supplied, and the current working
+                directory cannot be determined successfully, exit with
+                a non-zero status
+      -@        on systems that support it, present a file with extended
+                attributes as a directory containing the file attributes
+
+    The default is to follow symbolic links, as if `-L' were specified.
+    `..' is processed by removing the immediately previous pathname component
+    back to a slash or the beginning of DIR.
+
+    Exit Status:
+    Returns 0 if the directory is changed, and if $PWD is set successfully when
+    -P is used; non-zero otherwise.
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo/.git (GIT_DIR!)
+$ git status
+fatal: this operation must be run in a work tree
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo/.git (GIT_DIR!)
+$ gitcd ..
+bash: gitcd: command not found
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo/.git (GIT_DIR!)
+$ cd ..
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git status
+warning: unable to access '.gitignore': Permission denied
+On branch master
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ cd ..
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.android/
+        ../.bash_history
+        ../.cache/
+        ../.gitconfig
+        ../.idlerc/
+        ../.viminfo
+        ../3D Objects/
+        ../AppData/
+        ../Contacts/
+        ./
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../IntelGraphicsProfiles/
+        ../Links/
+        ../MicrosoftEdgeBackups/
+        ../Music/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+        ../OneDrive/
+        ../Pictures/
+        ../PycharmProjects/
+        ../Saved Games/
+        ../Searches/
+        ../Videos/
+        ../keydata.txt
+        ../klogger.py
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop (master)
+$ cd /myrepo/
+bash: cd: /myrepo/: No such file or directory
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop (master)
+$ cd myrepo
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$ git status
+warning: unable to access '.gitignore': Permission denied
+On branch master
+nothing to commit, working tree clean
+
+NAJJ KHAN@DESKTOP-0J2N1MI MINGW64 ~/Desktop/myrepo (master)
+$
